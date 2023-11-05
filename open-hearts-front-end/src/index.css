@@ -250,3 +250,13 @@ h1 {
 .location {
   margin-left: 100px;
 }
+
+.contentContainer {
+  box-sizing: border-box;
+  overflow: auto;
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

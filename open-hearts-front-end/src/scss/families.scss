@@ -1,0 +1,83 @@
+$font-family: 'Poppins', sans-serif;
+$primary-color: #5709ab;
+$secondary-color: #a407a1;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+.families-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.show-families {
+  display: flex;
+  width: 300px;
+  margin: 1rem;
+  background-color: $primary-color;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+
+  img {
+    width: 100%;
+  }
+
+  .description-family {
+    background-color: white;
+    padding: 2rem;
+    text-align: right;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+  }
+
+  &:hover {
+    .description-family {
+      transform: translateY(0);
+    }
+  }
+}
+
+.family-info {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
+
+  a {
+    color: lightpink;
+    text-decoration: none;
+  }
+}
+
+place-info h3 {
+  margin-top: 0;
+}
+
+button {
+  color: white;
+  background-color: $secondary-color;
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  font-family: $font-family;
+  font-size: 16px;
+  font-weight: bolder;
+  border: 0;
+  border-radius: 5px;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}

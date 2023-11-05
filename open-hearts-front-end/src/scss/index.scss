@@ -1,0 +1,148 @@
+$font-family-main: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$font-family-code: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+$primary-bg-color: #340e7c;
+$primary-text-color: lightgrey;
+$primary-link-color: white;
+$secondary-link-color: pink;
+$submit-button-bg-color: #a407a1;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+body {
+  margin: 0;
+  font-family: $font-family-main;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: $font-family-code;
+}
+
+.navbar {
+  background-image: linear-gradient($primary-bg-color, rgb(81, 20, 155));
+  color: $primary-text-color;
+  text-align: center;
+  font-size: 1.5rem;
+  height: 10vh;
+  border-radius: 40px 40px 300px 300px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+}
+
+.navbar li {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25px;
+}
+
+.navbar a {
+  color: $primary-link-color;
+  font-size: 1.5em;
+  text-decoration: none;
+
+  &:hover {
+    color: $secondary-link-color;
+  }
+}
+
+.total-raised {
+  margin-right: 50px;
+  text-align: end;
+}
+
+.navbar img {
+  width: 100px;
+}
+
+.heart-logo {
+  width: 100px;
+  justify-content: center;
+}
+
+.explore-button {
+  /* background-color: var(--primary-color); */
+  color: white;
+  background-color: $submit-button-bg-color;
+  cursor: pointer;
+  display: inline-block;
+  padding: 15px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bolder;
+  border: 0;
+  border-radius: 5px;
+  width: 300px;
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+    &:hover {
+      color: $secondary-link-color;
+    }
+  }
+}
+
+.submit-button {
+  /* background-color: var(--primary-color); */
+  color: white;
+  background-color: $submit-button-bg-color;
+  cursor: pointer;
+  display: inline-block;
+  padding: 15px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bolder;
+  border: 0;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 20px;
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+    &:hover {
+      color: $secondary-link-color;
+    }
+  }
+}
+
+.aboutUs {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  margin: auto;
+  padding: 10%;
+}
+
+.mission {
+  margin-top: 20px;
+  font-size: x-large;
+}
+
+.family {
+  width: 80vw;
+  border: $primary-bg-color solid;
+  border-radius: 1%;
+}
+
+.ccContainer {
+  margin-top: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  margin-top: 20px;
+  margin-right: 20px;
+}
